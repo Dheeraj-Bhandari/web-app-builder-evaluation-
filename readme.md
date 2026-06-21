@@ -112,8 +112,8 @@ Build a restaurant discovery platform "FoodieSpot" with:
 ### EventHub - Kiro & Claude Code
 ![EventHub by Kiro and Claude Code](eventhub%20by%20krio%20and%20claude%20code.png)
 
-### FoodieSpot - Kiro
-![FoodieSpot by Kiro](foodie%20spot%20kiro%20.png)
+### Eventhub - lovable MCP and claude code. 
+![Eventhub - Lovable MCP and lcaude code](foodie%20spot%20kiro%20.png)
 
 ### FoodieSpot - Claude Code & Kiro Comparison
 ![FoodieSpot Claude Code vs Kiro](foodie_spot_claude%20code%20kiro.png)
