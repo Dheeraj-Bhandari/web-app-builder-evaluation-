@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: #ff6b35;
+  --primary-dark: #e55a2b;
+  --primary-light: #ff8c5a;
+  --secondary: #2d3436;
+  --accent: #f39c12;
+  --text-dark: #2d3436;
+  --text-light: #636e72;
+  --bg-light: #fafafa;
+  --bg-warm: #fff8f5;
+  --white: #ffffff;
+  --gradient: linear-gradient(135deg, #ff6b35 0%, #f39c12 100%);
+  --shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  --shadow-hover: 0 12px 40px rgba(255, 107, 53, 0.2);
+}
+
+body {
+  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif;
+  line-height: 1.6;
+  color: var(--text-dark);
+  background-color: var(--white);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  font-family: inherit;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 28px;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  gap: 8px;
+}
+
+.btn-primary {
+  background: var(--gradient);
+  color: var(--white);
+  box-shadow: 0 4px 15px rgba(255, 107, 53, 0.3);
+}
+
+.btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(255, 107, 53, 0.4);
+}
+
+.btn-outline {
+  background: transparent;
+  border: 2px solid var(--primary);
+  color: var(--primary);
+}
+
+.btn-outline:hover {
+  background: var(--primary);
+  color: var(--white);
+}
+
+.btn-dark {
+  background: var(--secondary);
+  color: var(--white);
+}
+
+.btn-dark:hover {
+  background: #1e272e;
+  transform: translateY(-2px);
+}
+
+/* Section styles */
+.section {
+  padding: 100px 0;
+}
+
+.section-title {
+  font-size: 2.75rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 16px;
+  color: var(--text-dark);
+}
+
+.section-subtitle {
+  font-size: 1.1rem;
+  color: var(--text-light);
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto 60px;
+}
+
+/* Star rating */
+.stars {
+  display: flex;
+  gap: 2px;
+  color: var(--accent);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .section {
+    padding: 70px 0;
+  }
+  
+  .section-title {
+    font-size: 2rem;
+  }
+}

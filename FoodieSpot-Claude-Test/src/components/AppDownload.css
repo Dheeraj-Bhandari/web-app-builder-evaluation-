@@ -1,0 +1,185 @@
+.app-download {
+  padding: 100px 0;
+  background: linear-gradient(135deg, var(--secondary) 0%, #1a1a2e 100%);
+  overflow: hidden;
+}
+
+.app-download-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.app-content {
+  color: var(--white);
+}
+
+.app-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: var(--white);
+}
+
+.app-description {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 2rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.app-features {
+  margin-bottom: 2.5rem;
+}
+
+.app-feature {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.feature-icon {
+  color: var(--primary);
+}
+
+.download-buttons {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.store-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  background: var(--white);
+  color: var(--text-dark);
+  padding: 12px 24px;
+  border-radius: 12px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.store-btn:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.store-btn-content {
+  text-align: left;
+}
+
+.store-btn-small {
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: var(--text-light);
+}
+
+.store-btn-large {
+  font-size: 1.1rem;
+  font-weight: 600;
+  display: block;
+}
+
+.app-mockup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mockup-container {
+  position: relative;
+  width: 280px;
+  height: 560px;
+  background: linear-gradient(145deg, #2d2d2d 0%, #1a1a1a 100%);
+  border-radius: 40px;
+  padding: 12px;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4);
+}
+
+.mockup-screen {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, var(--primary) 0%, var(--primary-dark) 50%, #1a1a2e 100%);
+  border-radius: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.mockup-logo {
+  width: 60px;
+  height: 60px;
+  background: var(--white);
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  color: var(--primary);
+}
+
+.mockup-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.mockup-subtitle {
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+@media (max-width: 992px) {
+  .app-download-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .app-title {
+    font-size: 2rem;
+  }
+
+  .app-feature {
+    justify-content: center;
+  }
+
+  .download-buttons {
+    justify-content: center;
+  }
+
+  .app-mockup {
+    order: -1;
+  }
+}
+
+@media (max-width: 576px) {
+  .app-download {
+    padding: 60px 0;
+  }
+
+  .download-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .store-btn {
+    width: 100%;
+    max-width: 250px;
+    justify-content: center;
+  }
+
+  .mockup-container {
+    width: 240px;
+    height: 480px;
+  }
+}

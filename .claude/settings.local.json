@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__plugin_lovable_lovable__create_project",
+      "mcp__plugin_lovable_lovable__enable_database",
+      "mcp__plugin_lovable_lovable__send_message",
+      "mcp__plugin_lovable_lovable__list_workspaces",
+      "Bash(npm install *)",
+      "Bash(npm run *)",
+      "Bash(start *)"
+    ]
+  }
+}
