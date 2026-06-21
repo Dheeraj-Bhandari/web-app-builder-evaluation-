@@ -27,20 +27,60 @@
 
 ## Test Prompts
 
-### EventHub (Event Ticketing)
+> **Same exact prompts used across all tools for fair comparison**
+
+### Prompt 1: EventHub (Event Ticketing Platform)
 ```
-Build "EventHub" with: Hero section "Discover Amazing Events Near You", 
-navigation (Home, Events, About, Contact, Login), features section, 
-testimonials, footer, About page, Contact page with form. 
-Fully responsive, indigo/purple color scheme.
+Using Lovable, create a new project called "EventHub" - an event ticketing platform.
+
+Build the following:
+
+1. A modern landing page with:
+   - Hero section with headline "Discover Amazing Events Near You"
+   - Subheadline: "Find and book tickets to concerts, sports, conferences and more"
+   - A "Browse Events" call-to-action button
+   - Features section showing 4 features: Easy Booking, Secure Payments, Instant Tickets, 24/7 Support
+   - Testimonials section with 3 fake customer reviews
+   - Footer with links and social media icons
+
+2. Navigation menu with links: Home, Events, About, Contact, Login
+
+3. Make it fully responsive - must look great on mobile phones and desktop
+
+4. Use a modern color scheme with primary color being indigo/purple
+
+5. Create an About page with:
+   - Company story
+   - Team section (can use placeholder images)
+   - Mission statement
+
+6. Create a Contact page with:
+   - Contact form (name, email, message)
+   - Company address and phone (placeholder)
+   - Map placeholder
 ```
 
-### FoodieSpot (Restaurant Discovery)
+### Prompt 2: FoodieSpot (Restaurant Discovery Platform)
 ```
-Build "FoodieSpot" with: Hero "Find Your Perfect Dining Experience", 
-search with filters (location, date, party size, cuisine), 
-Featured Restaurants grid, navigation, app download section.
-Fully responsive, warm food-inspired colors.
+Build a restaurant discovery platform "FoodieSpot" with:
+
+1. Landing page with:
+   - Hero section: "Find Your Perfect Dining Experience"
+   - Subheadline: "Discover top restaurants, read reviews, and book tables instantly"
+   - Search functionality with location, date, party size, cuisine filters
+   - "Search Restaurants" call-to-action button
+
+2. Featured Restaurants section with:
+   - Grid of restaurant cards
+   - Each card showing: image, name, cuisine type, rating, price range
+
+3. Navigation: Home, Restaurants, About, Contact, Login
+
+4. Fully responsive design
+
+5. Modern color scheme with warm/food-inspired colors
+
+6. App download section promoting mobile app
 ```
 
 ---
