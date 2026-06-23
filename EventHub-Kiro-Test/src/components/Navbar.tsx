@@ -1,11 +1,24 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Ticket } from 'lucide-react';
+import { Menu, X, Ticket, Sun, Moon } from 'lucide-react';
 import './Navbar.css';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const [isDarkMode, setIsDarkMode] = useState(() => {
+    const saved = localStorage.getItem('darkMode');
+    return saved ? JSON.parse(saved) : false;
+  });
   const location = useLocation();
+
+  useEffect(() => {
+    document.documentElement.setAttribute('data-theme', isDarkMode ? 'dark' : 'light');
+    localStorage.setItem('darkMode', JSON.stringify(isDarkMode));
+  }, [isDarkMode]);
+
+  const toggleDarkMode = () => {
+    setIsDarkMode(!isDarkMode);
+  };
 
   const navLinks = [
     { path: '/', label: 'Home' },
@@ -33,6 +46,9 @@ export default function Navbar() {
               {link.label}
             </Link>
           ))}
+          <button className="theme-toggle" onClick={toggleDarkMode} aria-label="Toggle dark mode">
+            {isDarkMode ? <Sun size={20} /> : <Moon size={20} />}
+          </button>
           <Link to="/login" className="btn btn-primary nav-btn" onClick={() => setIsOpen(false)}>
             Login
           </Link>

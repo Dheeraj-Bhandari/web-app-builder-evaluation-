@@ -1,4 +1,4 @@
-import { UtensilsCrossed, Facebook, Twitter, Instagram, Mail } from 'lucide-react';
+import { UtensilsCrossed, Mail, Globe, MessageCircle, Share2 } from 'lucide-react';
 import './Footer.css';
 
 function Footer() {
@@ -15,14 +15,14 @@ function Footer() {
               Discover exceptional dining experiences and create unforgettable memories.
             </p>
             <div className="social-links">
-              <a href="#" className="social-link" aria-label="Facebook">
-                <Facebook size={20} />
+              <a href="#" className="social-link" aria-label="Website">
+                <Globe size={20} />
               </a>
-              <a href="#" className="social-link" aria-label="Twitter">
-                <Twitter size={20} />
+              <a href="#" className="social-link" aria-label="Message">
+                <MessageCircle size={20} />
               </a>
-              <a href="#" className="social-link" aria-label="Instagram">
-                <Instagram size={20} />
+              <a href="#" className="social-link" aria-label="Share">
+                <Share2 size={20} />
               </a>
             </div>
           </div>

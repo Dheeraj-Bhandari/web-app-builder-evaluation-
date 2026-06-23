@@ -16,6 +16,21 @@
   --border: #E0E0E0;
   --white: #FFFFFF;
   --star: #FFB800;
+  --card-bg: #FFFFFF;
+  --navbar-bg: rgba(255, 255, 255, 0.95);
+  --shadow: rgba(0, 0, 0, 0.1);
+}
+
+[data-theme="dark"] {
+  --text-dark: #F5F5F5;
+  --text-light: #B0B0B0;
+  --background: #121212;
+  --background-alt: #1E1E1E;
+  --border: #333333;
+  --white: #1E1E1E;
+  --card-bg: #1E1E1E;
+  --navbar-bg: rgba(18, 18, 18, 0.95);
+  --shadow: rgba(0, 0, 0, 0.3);
 }
 
 body {
@@ -23,6 +38,7 @@ body {
   color: var(--text-dark);
   line-height: 1.6;
   background: var(--background);
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 a {
